@@ -4,7 +4,7 @@ load()
 //on load function
 async function load(){
     try{
-        const response = await fetch('https://coinflip-fullstack.herokuapp.com/')
+        const response = await fetch('https://coinflip-fullstack.herokuapp.com/api/')
         const data = await response.json()
         console.log(data)
         objectURL = data        
@@ -16,7 +16,7 @@ async function load(){
 
 async function flip(){
     try{
-        const response = await fetch('https://coinflip-fullstack.herokuapp.com/')
+        const response = await fetch('https://coinflip-fullstack.herokuapp.com/coin/')
         const data = await response.json()
         console.log(data)
         objectURL = data
