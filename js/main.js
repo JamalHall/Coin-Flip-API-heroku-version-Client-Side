@@ -26,4 +26,5 @@ async function flip(){
     }
 
 
-  
+    const test = document.querySelector('h2')
+    console.log(test.parentNode.childNodes)
