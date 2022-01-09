@@ -18,8 +18,8 @@ async function flip(){
     try{
         const response = await fetch('https://coinflip-fullstack.herokuapp.com/coin/')
         const data = await response.json()
-        console.log(data)
-        objectURL = data
+        console.log(data.imageUrl)
+        //objectURL = data.imageURL
         document.getElementById("image").setAttribute("src",objectURL)
     }
     catch(err) {console.log(err)}
@@ -28,3 +28,7 @@ async function flip(){
 
     const test = document.querySelector('h2')
     console.log(test.parentNode.childNodes)
+
+
+
+    
