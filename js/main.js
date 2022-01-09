@@ -20,7 +20,13 @@ async function flip(){
 
         console.log(data.msg)
         let res=data.msg.toUpperCase()
-        counter(data.msg)        
+
+        console.log(data.imageUrl)        
+        let objectURL = data.imageUrl
+
+        counter(data.msg)
+
+        document.getElementById('image').setAttribute("src",objectURL)
         document.getElementById('save').innerText= res+" "+document.getElementById('save').innerText
         document.getElementById('total').innerText = tot
         document.getElementById('heads').innerText = hed
@@ -35,11 +41,9 @@ async function flip(){
     
     function counter(res){        
         if(res=='heads'){
-            document.getElementById('image').setAttribute("src","https://github.com/JamalHall/Coin-Flip-Server-Side-Heroku/blob/1457918d54cc45212f4ab936d6a956ce9da8f754/images/heads.png") 
             tot+=1
             hed+=1
         } else{
-            document.getElementById('image').setAttribute("src","https://github.com/JamalHall/Coin-Flip-Server-Side-Heroku/blob/1457918d54cc45212f4ab936d6a956ce9da8f754/images/tails.png")
             tot+=1
             tai+=1
         }
