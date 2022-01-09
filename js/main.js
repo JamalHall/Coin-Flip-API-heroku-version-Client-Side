@@ -38,7 +38,6 @@ async function flip(){
     let tot =0
     let hed =0
     let tai =0
-    console.log(tot,hed,tai)
     
     function counter(res){        
         if(res=='heads'){
