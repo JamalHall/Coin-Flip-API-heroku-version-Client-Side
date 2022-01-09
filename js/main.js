@@ -25,7 +25,7 @@ async function flip(){
         let objectURL = data.imageUrl
 
         counter(data.msg)
-        
+
         document.getElementById('image').setAttribute("src",objectURL)
         document.getElementById('save').innerText= res+" "+document.getElementById('save').innerText
         document.getElementById('total').innerText = tot
@@ -38,8 +38,9 @@ async function flip(){
     let tot =0
     let hed =0
     let tai =0
-    function counter(res){         
-        console.log(tot,hed,tai)
+    console.log(tot,hed,tai)
+    
+    function counter(res){        
         if(res=='heads'){
             tot+=1
             hed+=1
