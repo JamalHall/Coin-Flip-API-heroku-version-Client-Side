@@ -19,11 +19,11 @@ async function flip(){
         const response = await fetch('https://coinflip-fullstack.herokuapp.com/coin/')
         const data = await response.json()
         console.log(data.msg)
-        let res=data.msg
+        let res=data.msg.toUpperCase()
         console.log(data.imageUrl)        
         let objectURL = data.imageURL
-        document.getElementById("image").setAttribute("src",`"${objectURl}"`)
-        document.getElementById('save').innerText= res.toUpperCase()+" "+document.getElementById('save').innerText
+        document.getElementById("image").setAttribute("src",`"${objectURL}"`)
+        document.getElementById('save').innerText= res+" "+document.getElementById('save').innerText
     }
     catch(err) {console.log(err)}
     }
