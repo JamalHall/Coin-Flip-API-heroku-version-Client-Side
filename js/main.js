@@ -27,6 +27,9 @@ async function flip(){
         
         document.getElementById('image').setAttribute("src",objectURL)
         document.getElementById('save').innerText= res+" "+document.getElementById('save').innerText
+        document.getElementById('total').innerText = tot
+        document.getElementById('heads').innerText = hed
+        document.getElementById('tails').innerText = tai
 
         counter(data.msg)
     }
@@ -36,9 +39,7 @@ async function flip(){
     let tot =0
     let hed =0
     let tai =0
-    document.getElementById('total').innerText = tot
-    document.getElementById('heads').innerText = hed
-    document.getElementById('tails').innerText = tai
+
 
     function counter(res){         
         console.log(tot,hed,tai)
