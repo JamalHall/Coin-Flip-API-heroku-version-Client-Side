@@ -21,8 +21,8 @@ async function flip(){
         console.log(data.msg)
         let res=data.msg.toUpperCase()
         console.log(data.imageUrl)        
-        let objectURL = data['imageURL']
-        document.getElementById('image').setAttribute("src",'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.digitalspy.com%2Ftv%2Fustv%2Fa852636%2Fthe-simpsons-stephen-hawking-tribute%2F&psig=AOvVaw3xxQlBWzk4iqDUcxlHKhJG&ust=1641782141139000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPDH3KDRo_UCFQAAAAAdAAAAABAK')
+        let objectURL = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.digitalspy.com%2Ftv%2Fustv%2Fa852636%2Fthe-simpsons-stephen-hawking-tribute%2F&psig=AOvVaw3xxQlBWzk4iqDUcxlHKhJG&ust=1641782141139000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPDH3KDRo_UCFQAAAAAdAAAAABAK'
+        document.getElementById('image').setAttribute("src",objectURL)
         document.getElementById('save').innerText= res+" "+document.getElementById('save').innerText
     }
     catch(err) {console.log(err)}
