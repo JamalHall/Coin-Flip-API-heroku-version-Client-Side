@@ -22,7 +22,7 @@ async function flip(){
         let res=data.msg.toUpperCase()
         console.log(data.imageUrl)        
         let objectURL = data.imageURL
-        document.getElementById('image').setAttribute("src",data.imageURL)
+        document.getElementById('image').setAttribute(src,objectURL)
         document.getElementById('save').innerText= res+" "+document.getElementById('save').innerText
     }
     catch(err) {console.log(err)}
