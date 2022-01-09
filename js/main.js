@@ -21,7 +21,7 @@ async function flip(){
         console.log(data.msg)
         let res=data.msg.toUpperCase()
         console.log(data.imageUrl)        
-        let objectURL = 'https://tstotopix.files.wordpress.com/2016/08/stephen_hawking_character.png'
+        let objectURL = data.imageUrl
         document.getElementById('image').setAttribute("src",objectURL)
         document.getElementById('save').innerText= res+" "+document.getElementById('save').innerText
     }
