@@ -29,18 +29,21 @@ async function flip(){
     catch(err) {console.log(err)}
     }
 
+        let tot =0
+        let hed =0
+        let tai =0
     function counter(res){
+        console.log(res)
+        
         document.getElementById('total').innerText = tot
         document.getElementById('heads').innerText = hed
         document.getElementById('tails').innerText = tai
-        let tot=0
-        let hed=0
-        let tai=0
+        console.log(tot,hed,tai)
         if(res=='heads'){
-            total+=1
-            heads+=1
+            tot+=1
+            hed+=1
         } else{
-            total+=1
+            tot+=1
             tai+=1
         }
     }
