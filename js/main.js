@@ -33,14 +33,14 @@ async function flip(){
     catch(err) {console.log(err)}
     }
 
-        let tot =0
-        let hed =0
-        let tai =0
+    let tot =0
+    let hed =0
+    let tai =0
+    document.getElementById('total').innerText = tot
+    document.getElementById('heads').innerText = hed
+    document.getElementById('tails').innerText = tai
 
     function counter(res){         
-        document.getElementById('total').innerText = tot
-        document.getElementById('heads').innerText = hed
-        document.getElementById('tails').innerText = tai
         console.log(tot,hed,tai)
         if(res=='heads'){
             tot+=1
