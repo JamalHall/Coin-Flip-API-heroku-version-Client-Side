@@ -27,7 +27,7 @@ async function flip(){
         counter(data.msg)
 
         document.getElementById('image').setAttribute("src",objectURL)
-        document.getElementById('save').innerText= res+" "+document.getElementById('save').innerText
+        document.getElementById('save').innerText= res+"☜(⌒▽⌒)☞ "+document.getElementById('save').innerText
         document.getElementById('total').innerText = tot
         document.getElementById('heads').innerText = hed
         document.getElementById('tails').innerText = tai        
